@@ -1,0 +1,48 @@
+{
+  "status": "PASS_CHAT_TO_BACKEND",
+  "recorded_at": "2026-10-29T14:08:50.432363+01:00",
+  "public_channel": "morkeeth",
+  "scopes": [
+    "user:read:chat"
+  ],
+  "transport_source_commit": "97df9cc0b362002dd5743911a4bd5eb7bbd6a7a2",
+  "trace": [
+    {
+      "result": "welcome"
+    },
+    {
+      "result": "keepalive"
+    },
+    {
+      "result": "keepalive"
+    },
+    {
+      "result": "keepalive"
+    },
+    {
+      "result": "forwarded"
+    },
+    {
+      "result": "keepalive"
+    },
+    {
+      "result": "keepalive"
+    }
+  ],
+  "deliveries": [
+    {
+      "at": "2026-10-29T14:08:25.161905+01:00",
+      "cue": "Director show Hydrate!",
+      "shown": true,
+      "action": null
+    }
+  ],
+  "cleanup": {
+    "chat_input": false,
+    "adapter_enabled": false,
+    "existing_controller_stopped": false
+  },
+  "visual_evidence": "Native screen capture inspected: Hydrate! visibly painted in the browser overlay. Historical UI labels this input Chat simulator; the accompanying demo explains that label.",
+  "redactions": "Credentials, numeric Twitch account IDs, subscription/session identifiers and machine paths are omitted.",
+  "limits": "No broadcast was started. This is browser-overlay proof, separate from active OBS output."
+}

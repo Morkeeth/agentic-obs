@@ -1,0 +1,15 @@
+{
+  "checks": [
+    "focus.",
+    "clear.",
+    "back to me.",
+    "countdown20.",
+    "countdown20 seconds.",
+    "take a break.",
+    "first-sentence boundary",
+    "I asked the director to show me the cut",
+    "The director said hello",
+    "Director, unsupported operation.",
+    "missing port fails before MCP"
+  ]
+}

@@ -1,0 +1,19 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Stream agent</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="/control.css"></head>
+<body><header><b>STREAM AGENT</b><span id="conn">connecting…</span></header>
+<main>
+<section class="stage"><div class="topline"><span>OVERLAY PREVIEW · what viewers see</span><span>OBS Browser Source: http://127.0.0.1:8879/overlay.html · 1920×1080</span></div>
+<div class="frame"><iframe id="preview" src="/overlay.html" title="Overlay preview" tabindex="-1"></iframe></div>
+<ol id="log" aria-label="Recent cues"></ol></section>
+<aside>
+<h2>Inputs</h2><p class="hint">All off at start. Nothing reaches the screen until you turn an input on.</p>
+<div id="inputs" class="inputs"></div>
+<h2>Voice</h2><p class="hint" id="voice-note">Turn Voice on, then listen. Audio stays on this Mac (local Whisper). Say “Director, popup …”.</p><button type="button" id="listen" aria-pressed="false">Start listening</button><p class="hint" id="heard"></p>
+<h2>Random</h2><p class="hint">When Random is on, one preset graphic every <input id="rand" type="number" min="5" max="300" step="5" value="20" aria-label="Seconds between random graphics"> seconds.</p>
+<h2>Planner</h2><select id="planner" aria-label="Planner"></select><input id="model" maxlength="64" placeholder="model id (optional, for codex)" aria-label="Model id"><p class="hint" id="planner-note">Rules: works offline. Say or type the wake word “Director”.</p>
+<h2>Type a cue</h2><form id="typed"><input id="typed-text" maxlength="500" placeholder="popup Welcome to the stream"><button>Send</button></form>
+<h2>Local chat test</h2><p class="hint" id="twitch">The separate EventSub receiver manages real Twitch chat. This box is a local test input.</p>
+<form id="chat"><input id="chat-text" maxlength="500" placeholder="director, fire emoji"><button>Post as chat</button></form>
+<h2>Counters</h2><dl id="counters"></dl>
+<p class="hint">Bounded actions only: popup, lower third, emoji burst, countdown, clear. Text is capped at 80 characters, links are refused. This page never starts a stream or recording and never changes OBS.</p>
+</aside></main><script src="/control.js"></script></body></html>

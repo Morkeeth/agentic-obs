@@ -1,0 +1,9 @@
+{
+  "injected_failure": "MCP-style ExceptionGroup",
+  "http": 502,
+  "body": {
+    "error": "Local connector transport failed; no completed action confirmed",
+    "code": "transport_failure"
+  },
+  "following_state_http": 200
+}

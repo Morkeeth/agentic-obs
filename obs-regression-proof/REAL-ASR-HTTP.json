@@ -1,0 +1,291 @@
+[
+  {
+    "fixture_text": "Director, focus.",
+    "status": 200,
+    "body": {
+      "outcome": "applied",
+      "state": {
+        "connector_port": 8876,
+        "revision": 1,
+        "armed": true,
+        "display": {
+          "title": "Talk. We\u2019ll handle the screen.",
+          "subtitle": "Your live browser display",
+          "layout": "focus",
+          "accent": "lime",
+          "cue": "",
+          "until": null
+        },
+        "events": [
+          {
+            "at": 1793120543.476774,
+            "revision": 1,
+            "kind": "transcript",
+            "source": "transcript",
+            "fields": {
+              "layout": "focus"
+            }
+          }
+        ],
+        "transcript": "Director, focus.",
+        "obs": {
+          "connected": false,
+          "detail": "OBS disconnected (ConnectionRefusedError); browser output still works"
+        }
+      },
+      "transcript": "Director, focus.",
+      "local_only": true,
+      "transport": "whisper.cpp -> MCP ingest_transcript -> local display",
+      "audio_sha256": "e4d4c6d92bb66adab2a808602d93399e089f421f51f71cb7f717d3671f6ffb50",
+      "duration_s": 1.422375,
+      "latency_s": 3.934
+    }
+  },
+  {
+    "fixture_text": "Director, countdown twenty seconds.",
+    "status": 200,
+    "body": {
+      "outcome": "applied",
+      "state": {
+        "connector_port": 8876,
+        "revision": 2,
+        "armed": true,
+        "display": {
+          "title": "Talk. We\u2019ll handle the screen.",
+          "subtitle": "Your live browser display",
+          "layout": "focus",
+          "accent": "lime",
+          "cue": "Up next",
+          "until": 1793120567.206047
+        },
+        "events": [
+          {
+            "at": 1793120543.476774,
+            "revision": 1,
+            "kind": "transcript",
+            "source": "transcript",
+            "fields": {
+              "layout": "focus"
+            }
+          },
+          {
+            "at": 1793120547.206048,
+            "revision": 2,
+            "kind": "transcript",
+            "source": "transcript",
+            "fields": {
+              "seconds": 20,
+              "cue": "Up next"
+            }
+          }
+        ],
+        "transcript": "Director, Countdown 20 seconds.",
+        "obs": {
+          "connected": false,
+          "detail": "OBS disconnected (ConnectionRefusedError); browser output still works"
+        }
+      },
+      "transcript": "Director, Countdown 20 seconds.",
+      "local_only": true,
+      "transport": "whisper.cpp -> MCP ingest_transcript -> local display",
+      "audio_sha256": "3a1ad57d308638470985c1fef9ed3ef224544e926f919829dfce482e9294d97f",
+      "duration_s": 2.3046875,
+      "latency_s": 2.667
+    }
+  },
+  {
+    "fixture_text": "Director, back to me.",
+    "status": 200,
+    "body": {
+      "outcome": "applied",
+      "state": {
+        "connector_port": 8876,
+        "revision": 3,
+        "armed": true,
+        "display": {
+          "title": "Talk. We\u2019ll handle the screen.",
+          "subtitle": "Your live browser display",
+          "layout": "speaker",
+          "accent": "lime",
+          "cue": "",
+          "until": null
+        },
+        "events": [
+          {
+            "at": 1793120543.476774,
+            "revision": 1,
+            "kind": "transcript",
+            "source": "transcript",
+            "fields": {
+              "layout": "focus"
+            }
+          },
+          {
+            "at": 1793120547.206048,
+            "revision": 2,
+            "kind": "transcript",
+            "source": "transcript",
+            "fields": {
+              "seconds": 20,
+              "cue": "Up next"
+            }
+          },
+          {
+            "at": 1793120551.383279,
+            "revision": 3,
+            "kind": "transcript",
+            "source": "transcript",
+            "fields": {
+              "layout": "speaker",
+              "cue": "",
+              "seconds": 0
+            }
+          }
+        ],
+        "transcript": "Director, back to me.",
+        "obs": {
+          "connected": false,
+          "detail": "OBS disconnected (ConnectionRefusedError); browser output still works"
+        }
+      },
+      "transcript": "Director, back to me.",
+      "local_only": true,
+      "transport": "whisper.cpp -> MCP ingest_transcript -> local display",
+      "audio_sha256": "5d0945e0a46401a75d6afdc854d77e7de9983e2296623f3c54edbc080ba93b97",
+      "duration_s": 1.4688125,
+      "latency_s": 2.982
+    }
+  },
+  {
+    "fixture_text": "Director, unsupported operation.",
+    "status": 200,
+    "body": {
+      "outcome": "unsupported director cue; display unchanged",
+      "state": {
+        "connector_port": 8876,
+        "revision": 3,
+        "armed": true,
+        "display": {
+          "title": "Talk. We\u2019ll handle the screen.",
+          "subtitle": "Your live browser display",
+          "layout": "speaker",
+          "accent": "lime",
+          "cue": "",
+          "until": null
+        },
+        "events": [
+          {
+            "at": 1793120543.476774,
+            "revision": 1,
+            "kind": "transcript",
+            "source": "transcript",
+            "fields": {
+              "layout": "focus"
+            }
+          },
+          {
+            "at": 1793120547.206048,
+            "revision": 2,
+            "kind": "transcript",
+            "source": "transcript",
+            "fields": {
+              "seconds": 20,
+              "cue": "Up next"
+            }
+          },
+          {
+            "at": 1793120551.383279,
+            "revision": 3,
+            "kind": "transcript",
+            "source": "transcript",
+            "fields": {
+              "layout": "speaker",
+              "cue": "",
+              "seconds": 0
+            }
+          }
+        ],
+        "transcript": "Director, on supported operation.",
+        "obs": {
+          "connected": false,
+          "detail": "OBS disconnected (ConnectionRefusedError); browser output still works"
+        }
+      },
+      "transcript": "Director, on supported operation.",
+      "local_only": true,
+      "transport": "whisper.cpp -> MCP ingest_transcript -> local display",
+      "audio_sha256": "d2b19f093b93f14fd3845806eab6ab25e89ac7ef20ddadf7a78c22f136da6738",
+      "duration_s": 2.2234375,
+      "latency_s": 2.648
+    }
+  },
+  {
+    "fixture_text": "The director said hello.",
+    "status": 200,
+    "body": {
+      "outcome": "speech without director cue; display unchanged",
+      "state": {
+        "connector_port": 8876,
+        "revision": 3,
+        "armed": true,
+        "display": {
+          "title": "Talk. We\u2019ll handle the screen.",
+          "subtitle": "Your live browser display",
+          "layout": "speaker",
+          "accent": "lime",
+          "cue": "",
+          "until": null
+        },
+        "events": [
+          {
+            "at": 1793120543.476774,
+            "revision": 1,
+            "kind": "transcript",
+            "source": "transcript",
+            "fields": {
+              "layout": "focus"
+            }
+          },
+          {
+            "at": 1793120547.206048,
+            "revision": 2,
+            "kind": "transcript",
+            "source": "transcript",
+            "fields": {
+              "seconds": 20,
+              "cue": "Up next"
+            }
+          },
+          {
+            "at": 1793120551.383279,
+            "revision": 3,
+            "kind": "transcript",
+            "source": "transcript",
+            "fields": {
+              "layout": "speaker",
+              "cue": "",
+              "seconds": 0
+            }
+          }
+        ],
+        "transcript": "The director said hello.",
+        "obs": {
+          "connected": false,
+          "detail": "OBS disconnected (ConnectionRefusedError); browser output still works"
+        }
+      },
+      "transcript": "The director said hello.",
+      "local_only": true,
+      "transport": "whisper.cpp -> MCP ingest_transcript -> local display",
+      "audio_sha256": "791a664106a65984c18638ff97bb24cf7631ae115c1aaf99449c40fc39de823d",
+      "duration_s": 1.34725,
+      "latency_s": 2.515
+    }
+  },
+  {
+    "old_services_byte_equal": {
+      "8874": true,
+      "8875": true
+    }
+  }
+]

@@ -1,0 +1,17 @@
+/* OBS Browser Source at 1920x1080. Transparent ground; only the cue draws. */
+html,body{margin:0;width:1920px;height:1080px;background:transparent;overflow:hidden;font-family:Arial,Helvetica,sans-serif}
+#stage{position:relative;width:1920px;height:1080px}
+.layer{position:absolute}
+#popup{left:50%;top:44%;transform:translate(-50%,-50%);max-width:1500px;padding:36px 56px;background:#d6ff6b;color:#111;font-size:92px;font-weight:800;line-height:1.05;letter-spacing:-2px;text-align:center;border-radius:18px;box-shadow:0 18px 60px rgba(0,0,0,.35);animation:pop .28s cubic-bezier(.2,1.4,.4,1) both}
+#lower{left:90px;bottom:90px;display:flex;align-items:center;gap:22px;padding:22px 34px;background:rgba(17,20,17,.92);color:#f6f7f4;font-size:46px;font-weight:700;border-left:12px solid #d6ff6b;animation:slide .3s ease-out both}
+#lower .tag{font-size:20px;letter-spacing:3px;color:#d6ff6b;font-weight:700}
+#count{right:110px;top:90px;display:flex;flex-direction:column;align-items:center;padding:26px 44px;background:rgba(17,20,17,.92);color:#fff;border-radius:16px;animation:pop .25s ease-out both}
+#count-label{font-size:30px;letter-spacing:1px;color:#d6ff6b}#count-num{font-size:150px;line-height:1}
+#burst{inset:0;pointer-events:none}
+#burst span{position:absolute;bottom:-120px;font-size:96px;animation:rise var(--d,2.4s) ease-out forwards}
+#source{left:90px;top:60px;padding:8px 16px;background:rgba(17,20,17,.85);color:#ffbc85;font-size:22px;letter-spacing:2px}
+@keyframes pop{from{opacity:0;transform:translate(-50%,-50%) scale(.85)}to{opacity:1;transform:translate(-50%,-50%) scale(1)}}
+#count{animation-name:fade}@keyframes fade{from{opacity:0}to{opacity:1}}
+@keyframes slide{from{opacity:0;transform:translateX(-60px)}to{opacity:1;transform:none}}
+@keyframes rise{to{transform:translateY(-1250px) rotate(var(--r,0deg));opacity:.2}}
+@media (prefers-reduced-motion:reduce){#popup,#lower,#count{animation:none}#burst span{animation-duration:.01s}}

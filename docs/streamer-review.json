@@ -1,0 +1,53 @@
+{
+  "mode": "Optional streamer self-review; answers stay local",
+  "questions": [
+    {
+      "id": "G1",
+      "question": "Who uses this on their next stream, and for which repeated moment?",
+      "evidence": "README.md and the recorded behavior",
+      "follow_up": "Use a concrete observed example; keep unverified claims explicit."
+    },
+    {
+      "id": "G2",
+      "question": "What exact viewer command produces which visible effect?",
+      "evidence": "README.md and the recorded behavior",
+      "follow_up": "Use a concrete observed example; keep unverified claims explicit."
+    },
+    {
+      "id": "G3",
+      "question": "How does the streamer pause participation and regain control?",
+      "evidence": "README.md and the recorded behavior",
+      "follow_up": "Use a concrete observed example; keep unverified claims explicit."
+    },
+    {
+      "id": "G4",
+      "question": "What happens when the connection drops or permission is revoked?",
+      "evidence": "README.md and the recorded behavior",
+      "follow_up": "Use a concrete observed example; keep unverified claims explicit."
+    },
+    {
+      "id": "G5",
+      "question": "Which evidence is real Twitch, fake Twitch, browser rendering or native OBS?",
+      "evidence": "README.md and the recorded behavior",
+      "follow_up": "Use a concrete observed example; keep unverified claims explicit."
+    },
+    {
+      "id": "G6",
+      "question": "Which features are implemented and which remain future direction?",
+      "evidence": "README.md and the recorded behavior",
+      "follow_up": "Use a concrete observed example; keep unverified claims explicit."
+    },
+    {
+      "id": "G7",
+      "question": "Can a stranger follow the README without existing credentials?",
+      "evidence": "README.md and the recorded behavior",
+      "follow_up": "Use a concrete observed example; keep unverified claims explicit."
+    },
+    {
+      "id": "G8",
+      "question": "Is the overlay readable over a busy stream?",
+      "evidence": "README.md and the recorded behavior",
+      "follow_up": "Use a concrete observed example; keep unverified claims explicit."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+[
+  {
+    "text": "Director, focus.",
+    "error": "Cue not understood. Try: show\u2026, caption\u2026, countdown20, reveal\u2026, focus, back to me, break, clear"
+  },
+  {
+    "text": "Director, clear.",
+    "error": "Cue not understood. Try: show\u2026, caption\u2026, countdown20, reveal\u2026, focus, back to me, break, clear"
+  },
+  {
+    "text": "Director, back to me.",
+    "error": "Cue not understood. Try: show\u2026, caption\u2026, countdown20, reveal\u2026, focus, back to me, break, clear"
+  },
+  {
+    "text": "Director, countdown20.",
+    "error": "Cue not understood. Try: show\u2026, caption\u2026, countdown20, reveal\u2026, focus, back to me, break, clear"
+  },
+  {
+    "text": "Director, countdown20 seconds.",
+    "error": "Cue not understood. Try: show\u2026, caption\u2026, countdown20, reveal\u2026, focus, back to me, break, clear"
+  },
+  {
+    "text": "Director, take a break.",
+    "error": "Cue not understood. Try: show\u2026, caption\u2026, countdown20, reveal\u2026, focus, back to me, break, clear"
+  },
+  {
+    "text": "Director, show Toast. Anyway, so what I was saying",
+    "result": {
+      "outcome": "applied",
+      "state": {
+        "connector_port": 8874,
+        "revision": 1,
+        "armed": true,
+        "display": {
+          "title": "Toast. Anyway, so what I was saying",
+          "subtitle": "Your live browser display",
+          "layout": "speaker",
+          "accent": "lime",
+          "cue": "",
+          "until": null
+        },
+        "events": [
+          {
+            "at": 1793120486.3575099,
+            "revision": 1,
+            "kind": "transcript",
+            "source": "transcript",
+            "fields": {
+              "title": "Toast. Anyway, so what I was saying",
+              "layout": "speaker"
+            }
+          }
+        ],
+        "transcript": "Director, show Toast. Anyway, so what I was saying",
+        "obs": {
+          "connected": false,
+          "detail": "Not checked"
+        }
+      }
+    }
+  },
+  {
+    "text": "I asked the director to show me the cut",
+    "error": "Cue not understood. Try: show\u2026, caption\u2026, countdown20, reveal\u2026, focus, back to me, break, clear"
+  },
+  {
+    "text": "The director said hello",
+    "error": "Cue not understood. Try: show\u2026, caption\u2026, countdown20, reveal\u2026, focus, back to me, break, clear"
+  }
+]
