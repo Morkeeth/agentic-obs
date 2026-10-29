@@ -1,5 +1,17 @@
 # Agentic OBS
 
+## TLDR
+
+Connect bounded streamer cues and permitted chat commands to graphics and native OBS controls.<br>
+For streamers who want to direct a show while staying in the conversation.<br>
+The runnable rehearsal uses rules; a complete conversational editing flow remains in progress.
+
+## Review and pick up the work
+
+[docs/PRIOR-ART.md](docs/PRIOR-ART.md) · [Agent guide](AGENTS.md)
+
+Start with the linked source, setup and evidence. Recorded demos and sample data keep their original scope; use the repository instructions for a fresh run.
+
 Demo video: a 94-second local candidate is ready; the public YouTube link is pending. No submission is claimed.
 
 Direct a show while staying in the conversation. This prototype connects bounded streamer cues and permitted Twitch chat commands to graphics, with a separate native OBS connector for scenes and saved animations.
@@ -69,3 +81,7 @@ Other viewer text is ignored by the transport. Chat forwarding starts off and re
 ## Project dates and license
 
 The project development commits were created 27–29 October 2026, inside the 23 October–2 November submission window. Both author and committer dates were checked. The source is provided under the [MIT License](LICENSE).
+
+## License and data boundaries
+
+Code terms: [LICENSE](LICENSE). Data, provider responses, media, fonts and other third-party assets may have separate terms. Repository access alone does not grant rights to those materials. 
