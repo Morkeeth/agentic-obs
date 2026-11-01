@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Talk to your director</title><link rel="stylesheet" href="/style.css"><script defer src="/voice-ptt.js"></script></head><body>
+<header><a class="wordmark" href="/">Director / live workspace</a></header>
+<main><section class="editor"><h1>Talk through your next moment.</h1>
+<p>The director answers with spoken guidance and can stage a visual. You still inspect and Take using the workspace controls.</p>
+<p id="voice-state" role="status">Microphone off. Checking voice configuration…</p>
+<button id="hold-talk" disabled>Hold to talk</button> <button id="stop-voice">Stop voice</button>
+<p>Hold the button or Space while focused. Release to stop capture and send this turn. Maximum 12 seconds. Leaving the page or cancelling discards capture.</p>
+<p>Voice uses the OpenAI API and its API billing, separately from ChatGPT. Audio is sent only after you release a held turn; the server keeps no audio file.</p>
+<audio id="voice-reply" controls></audio><p id="voice-words" aria-live="polite"></p>
+<details><summary>Use an audio file instead of a microphone</summary><label>Mono 24 kHz PCM16 WAV, 0.1–12 seconds <input id="voice-file" type="file" accept="audio/wav"></label><button id="send-fixture" disabled>Send selected audio</button><p>This sends the selected file to the same API. Synthetic tone fixtures test wiring, not speech recognition.</p></details>
+<p><a href="/">Return to preview and Take</a></p></section></main></body></html>

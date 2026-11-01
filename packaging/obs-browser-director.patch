@@ -1,0 +1,18 @@
+diff --git a/cmake/os-macos.cmake b/cmake/os-macos.cmake
+index 336e92c99119e53b861c492cde92ea587c4df7a2..d3bc39cd0ee129eec823d2e2260644b0f135e3cf 100644
+--- a/cmake/os-macos.cmake
++++ b/cmake/os-macos.cmake
+@@ -51,11 +51,11 @@ foreach(helper IN LISTS helper_suffixes)
+     PROPERTIES
+       OUTPUT_NAME "${target_output_name}"
+       FOLDER plugins/obs-browser/Helpers
+-      XCODE_ATTRIBUTE_PRODUCT_BUNDLE_IDENTIFIER com.obsproject.obs-studio.helper${helper_plist}
++      XCODE_ATTRIBUTE_PRODUCT_BUNDLE_IDENTIFIER org.agenticstreamer.director.helper${helper_plist}
+       XCODE_ATTRIBUTE_CURRENT_PROJECT_VERSION ${OBS_BUILD_NUMBER}
+       XCODE_ATTRIBUTE_MARKETING_VERSION ${OBS_VERSION_CANONICAL}
+       XCODE_ATTRIBUTE_GENERATE_INFOPLIST_FILE YES
+-      XCODE_ATTRIBUTE_INFOPLIST_KEY_CFBundleDisplayName "${target_output_name}"
++      XCODE_ATTRIBUTE_INFOPLIST_KEY_CFBundleDisplayName "Agentic Streamer Helper${helper_name}"
+       XCODE_ATTRIBUTE_INFOPLIST_KEY_LSApplicationCategoryType "public.app-category.video"
+       XCODE_ATTRIBUTE_INFOPLIST_KEY_NSHumanReadableCopyright "(c) 2012-${CURRENT_YEAR} Lain Bailey"
+       XCODE_ATTRIBUTE_CODE_SIGN_ENTITLEMENTS "${CMAKE_CURRENT_SOURCE_DIR}/cmake/macos/entitlements-helper${helper_plist}.plist"

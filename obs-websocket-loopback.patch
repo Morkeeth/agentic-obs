@@ -1,0 +1,36 @@
+diff --git a/src/websocketserver/WebSocketServer.cpp b/src/websocketserver/WebSocketServer.cpp
+index 42a0b28..385fb53 100644
+--- a/src/websocketserver/WebSocketServer.cpp
++++ b/src/websocketserver/WebSocketServer.cpp
+@@ -100,17 +100,11 @@ void WebSocketServer::Start()
+ 	_server.reset();
+ 
+ 	websocketpp::lib::error_code errorCode;
+-	if (conf->Ipv4Only) {
+-		blog(LOG_INFO, "[WebSocketServer::Start] Locked to IPv4 bindings");
+-		_server.listen(websocketpp::lib::asio::ip::tcp::v4(), conf->ServerPort, errorCode);
+-	} else {
+-		blog(LOG_INFO, "[WebSocketServer::Start] Not locked to IPv4 bindings");
+-		_server.listen(conf->ServerPort, errorCode);
+-		if (errorCode && errorCode == websocketpp::lib::asio::error::address_family_not_supported) {
+-			blog(LOG_INFO, "[WebSocketServer::Start] IPv6 address family not supported, binding only to IPv4");
+-			_server.listen(websocketpp::lib::asio::ip::tcp::v4(), conf->ServerPort, errorCode);
+-		}
+-	}
++	// The director is local-only, regardless of the legacy IPv4 preference.
++	// Never fall back to a wildcard address when binding fails.
++	_server.listen(websocketpp::lib::asio::ip::tcp::endpoint(
++			       websocketpp::lib::asio::ip::address_v4::loopback(), conf->ServerPort),
++		       errorCode);
+ 
+ 	if (errorCode) {
+ 		std::string errorCodeMessage = errorCode.message();
+@@ -123,7 +117,7 @@ void WebSocketServer::Start()
+ 	_serverThread = std::thread(&WebSocketServer::ServerRunner, this);
+ 
+ 	blog(LOG_INFO, "[WebSocketServer::Start] Server started successfully on port %d. Possible connect address: %s",
+-	     conf->ServerPort.load(), Utils::Platform::GetLocalAddress().c_str());
++	     conf->ServerPort.load(), "127.0.0.1");
+ }
+ 
+ void WebSocketServer::Stop()
