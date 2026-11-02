@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   Agentic Streamer · Preview studio
+  </title>
+  <link href="/style.css" rel="stylesheet"/>
+  <script defer="" src="/ptt.js">
+  </script>
+  <script defer="" src="/monitor.js">
+  </script>
+  <script defer="" src="/continuous.js">
+  </script>
+  <script defer="" src="/speech.js">
+  </script>
+  <script defer="" src="/music.js">
+  </script>
+  <script defer="" src="/app.js">
+  </script>
+ </head>
+ <body>
+  <aside>
+   <a class="brand" href="/">
+    AGENTIC
+    <br/>
+    STREAMER
+    <span>
+     Preview studio
+    </span>
+   </a>
+   <nav>
+    <a href="#director">
+     01   Director
+    </a>
+    <a href="#monitors">
+     02   Your picture
+    </a>
+   </nav>
+   <p>
+    Your voice.
+    <br/>
+    Your show.
+   </p>
+  </aside>
+  <main>
+   <header>
+    <span>
+     LOCAL WORKSPACE
+    </span>
+    <span id="connection">
+     Connecting…
+    </span>
+    <button id="disable">
+     Pause control
+    </button>
+   </header>
+   <div class="control-column">
+    <section class="hero" id="director">
+     <p class="eyebrow">
+      STAY IN THE CONVERSATION
+     </p>
+     <h1>
+      Let’s make
+      <br/>
+      a little show.
+     </h1>
+     <p>
+      Tell your director what comes next. It stays in preview.
+     </p>
+     <div class="voice-controls">
+      <button class="primary" id="enable">
+       Enable preview control
+      </button>
+      <div class="microphone-row">
+       <label for="microphone">
+        Microphone
+       </label>
+       <select id="microphone">
+        <option value="">
+         System default
+        </option>
+       </select>
+       <meter aria-label="Microphone level" id="mic-level" max="1" min="0" value="0">
+       </meter>
+      </div>
+      <div class="actions voice-actions">
+       <button id="listen">
+        Start listening
+       </button>
+       <button disabled="" id="stop-listen">
+        Stop listening
+       </button>
+       <button aria-label="Hold to talk to director" id="ptt">
+        Hold to talk
+       </button>
+       <button id="cancel">
+        Cancel voice
+       </button>
+      </div>
+     </div>
+     <p aria-live="polite" id="status" role="status">
+      Ready when you are.
+     </p>
+     <p class="small">
+      Pause between directions. Listening stays on until you stop.
+     </p>
+     <details id="voice-settings">
+      <summary>
+       Voice settings
+      </summary>
+      <div class="voice-settings">
+       <label>
+        <input id="spoken" type="checkbox"/>
+        Speak director replies
+       </label>
+       <label for="voice-choice">
+        Installed voice
+       </label>
+       <select id="voice-choice">
+       </select>
+       <button id="voice-sample">
+        Hear sample
+       </button>
+      </div>
+     </details>
+    </section>
+    <section class="twitch-controls" id="twitch-panel">
+     <p class="eyebrow">
+      TWITCH CONNECTION
+     </p>
+     <form id="twitch-form">
+      <label for="twitch-channel">
+       Public channel name
+      </label>
+      <div class="inputrow">
+       <input id="twitch-channel" maxlength="25" placeholder="Your Twitch channel" required=""/>
+       <button>
+        Connect read only
+       </button>
+      </div>
+     </form>
+     <p class="small" id="twitch-state">
+      Not connected
+     </p>
+     <p class="small" id="twitch-last">
+     </p>
+     <label class="small">
+      <input id="chat-commands" type="checkbox"/>
+      Allow !brb, !title and !zoom in preview
+     </label>
+     <p class="small" id="twitch-command">
+      Chat commands off. No chat can Take.
+     </p>
+     <div class="actions">
+      <button data-cue="show chat">
+       Show chat
+      </button>
+      <button data-cue="hide chat">
+       Hide chat
+      </button>
+     </div>
+     <details class="stream-settings">
+      <summary>
+       Stream test settings
+      </summary>
+      <button id="prepare-bandwidth">
+       Prepare Twitch bandwidth test
+      </button>
+      <p class="small" id="bandwidth-status">
+       No stream starts from this app.
+      </p>
+     </details>
+    </section>
+    <section class="conversation" id="director-conversation">
+     <div>
+      <p class="eyebrow">
+       YOUR DIRECTOR
+      </p>
+      <p id="answer">
+       What would you like to prepare?
+      </p>
+      <p class="small" id="transcript">
+      </p>
+      <p class="small" id="latency">
+      </p>
+     </div>
+     <form id="direction">
+      <label for="text">
+       Or type a direction
+      </label>
+      <div class="inputrow">
+       <input id="text" maxlength="2000" placeholder="Give me a be-right-back screen in preview" required=""/>
+       <button>
+        Ask director
+       </button>
+      </div>
+     </form>
+    </section>
+   </div>
+   <section id="monitors">
+    <p class="small" hidden="" id="take-rule">
+     Changes stay in preview. Say “take it” to accept into local Program. Broadcast outputs stay off.
+    </p>
+    <div class="live-cues" hidden="" id="live-cues">
+     <button data-cue="zoom in on me">
+      Closer
+     </button>
+     <button data-cue="put the slides left">
+      Slides left
+     </button>
+     <button data-cue="add a border">
+      Border
+     </button>
+     <button data-cue="go picture in picture">
+      Picture in picture
+     </button>
+     <button data-cue="switch to the wide shot">
+      Wide
+     </button>
+    </div>
+    <div class="sectionhead">
+     <h2>
+      Your picture
+     </h2>
+     <span id="proof">
+      Synthetic rehearsal
+     </span>
+    </div>
+    <div class="monitors">
+     <article>
+      <div class="monitorhead">
+       PROGRAM
+       <span>
+        You choose what reaches the show
+       </span>
+      </div>
+      <div class="picture camera">
+       <img alt="Actual OBS program frame" hidden="" id="program-frame"/>
+       <div class="camera-mark">
+        ◉
+       </div>
+       <p id="program-name">
+        Camera
+       </p>
+       <small id="camera-caption">
+        Synthetic camera fixture · no device connected
+       </small>
+      </div>
+     </article>
+     <article>
+      <div class="monitorhead">
+       PREVIEW
+       <span id="revision">
+        Revision 0
+       </span>
+      </div>
+      <div class="picture preview">
+       <img alt="Actual OBS preview frame" hidden="" id="preview-frame"/>
+       <img alt="Selected rehearsal visual" hidden="" id="local-visual"/>
+       <span class="orb one">
+       </span>
+       <span class="orb two">
+       </span>
+       <div id="title">
+        Your next idea goes here.
+       </div>
+       <small id="preview-caption">
+        Nothing staged
+       </small>
+      </div>
+     </article>
+    </div>
+    <div class="stagebar">
+     <label for="title-input">
+      Title to stage
+     </label>
+     <input id="title-input" maxlength="180" value="Demo the demo"/>
+     <button class="primary" id="stage">
+      Stage in preview
+     </button>
+     <button id="clear">
+      Clear graphic
+     </button>
+     <button id="restore">
+      Restore preview
+     </button>
+    </div>
+    <p class="small" id="mode-explanation">
+     This workspace prepares preview only. Program and broadcast controls stay in OBS.
+    </p>
+    <section id="library-panel">
+     <div class="sectionhead">
+      <h2>
+       Your library
+      </h2>
+      <span>
+       Clips, motion, music and looks
+      </span>
+     </div>
+     <div class="library-items" id="library-items">
+     </div>
+    </section>
+   </section>
+   <section class="conversation" id="visual-controls">
+    <div>
+     <p class="eyebrow">
+      VISUALS IN PREVIEW
+     </p>
+     <h2>
+      Bring something in.
+     </h2>
+     <div class="actions">
+      <button id="slides">
+       Start slideshow
+      </button>
+      <button id="previous-slide">
+       Previous
+      </button>
+      <button id="next-slide">
+       Next slide
+      </button>
+     </div>
+     <label for="images">
+      Choose images or slide images
+     </label>
+     <input accept="image/png,image/jpeg,image/webp" id="images" multiple="" type="file"/>
+     <label for="assets">
+      Selected visuals
+     </label>
+     <select id="assets">
+     </select>
+     <button id="show-asset">
+      Show in preview
+     </button>
+    </div>
+    <div>
+     <form id="page-form">
+      <label for="page-url">
+       Public page to show
+      </label>
+      <input id="page-url" placeholder="https://example.org/" required="" type="url"/>
+      <button>
+       Load page
+      </button>
+     </form>
+     <p class="small">
+      Pages are opened by the OBS browser source. Choose the page yourself before asking the director to show it.
+     </p>
+     <form id="layout-form">
+      <label>
+       Left (%)
+       <input id="layout-x" max="90" min="0" type="number" value="5"/>
+      </label>
+      <label>
+       Top (%)
+       <input id="layout-y" max="90" min="0" type="number" value="5"/>
+      </label>
+      <label>
+       Width (%)
+       <input id="layout-width" max="100" min="10" type="number" value="90"/>
+      </label>
+      <label>
+       Height (%)
+       <input id="layout-height" max="100" min="10" type="number" value="90"/>
+      </label>
+      <button>
+       Move / resize in preview
+      </button>
+     </form>
+    </div>
+   </section>
+  </main>
+ </body>
+</html>

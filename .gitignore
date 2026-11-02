@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.venv/
+.runtime/
+.env
+.obs-private.json

@@ -1,0 +1,224 @@
+{
+  "version": 1,
+  "assets": [
+    {
+      "id": "camera-wide",
+      "type": "camera",
+      "title": "Desk wide",
+      "file": "camera-wide-clean-loop.mp4",
+      "source_path": "creator-library:P1322308.MOV",
+      "licence": "Creator-supplied asset, used with permission for this project. Third-party marks remain with their owners.",
+      "provenance": "Creator-authorized existing desk footage, 2 Nov",
+      "tags": [
+        "wide",
+        "desk",
+        "camera",
+        "talking"
+      ],
+      "sha256": "a32dd54be5835d191c31ef881243a6b305508b736018af1e3f1080dfbc21874a",
+      "redistributable": true,
+      "duration": 8.0,
+      "muted": true,
+      "thumbnail": "camera-wide.jpg",
+      "baked_label": false
+    },
+    {
+      "id": "camera-close",
+      "type": "camera",
+      "title": "Desk close-up",
+      "file": "camera-close-clean-loop.mp4",
+      "source_path": "creator-library:P1322306.MOV",
+      "licence": "Creator-supplied asset, used with permission for this project. Third-party marks remain with their owners.",
+      "provenance": "Creator-authorized existing desk footage, 2 Nov",
+      "tags": [
+        "close",
+        "close up",
+        "camera",
+        "talking"
+      ],
+      "sha256": "a8482a3e45b9bf69a4d676243f51a13fbc71fae62182ecdc739ca9ed78181178",
+      "redistributable": true,
+      "duration": 8.0,
+      "muted": true,
+      "thumbnail": "camera-close.jpg",
+      "baked_label": false
+    },
+    {
+      "id": "notification-burst",
+      "type": "animation",
+      "title": "Glassy notification burst",
+      "file": "notification-burst.mp4",
+      "source_path": "creator-library:split-reset-notification-16x9.mp4",
+      "licence": "Creator-supplied asset, used with permission for this project. Third-party marks remain with their owners.",
+      "provenance": "Studio catalog 59f2547e483d529b3323; YES \u00b7 24 Oct10:08, ui-real-3 v5 split treatment; all original audio removed",
+      "tags": [
+        "notification",
+        "notification burst",
+        "glassy"
+      ],
+      "sha256": "b21a482ec60659de4910768679f317928ad8a6cf09989edbe64f27700cad1277",
+      "redistributable": true,
+      "duration": 6.0,
+      "muted": true,
+      "thumbnail": "notification-burst.jpg"
+    },
+    {
+      "id": "split",
+      "type": "animation",
+      "title": "Glassy usage split",
+      "file": "split.mp4",
+      "source_path": "creator-library:split-weekly-limit-16x9.mp4",
+      "licence": "Creator-supplied asset, used with permission for this project. Third-party marks remain with their owners.",
+      "provenance": "Studio catalog 9384547232cc682f536f; YES \u00b7 24 Oct10:08, ui-real-3 v5 split treatment; all original audio removed",
+      "tags": [
+        "split",
+        "ui-real-3",
+        "limits"
+      ],
+      "sha256": "f4e5b1340eb6c5f424a17cc43206e8f5e9c811914441d7187b3ed3dd901f620e",
+      "redistributable": true,
+      "duration": 6.0,
+      "muted": true,
+      "thumbnail": "split.jpg"
+    },
+    {
+      "id": "photo-booth",
+      "type": "animation",
+      "title": "Photo Booth proof",
+      "file": "photo-booth.mp4",
+      "source_path": "creator-library:13-photobooth-proof.mp4",
+      "licence": "Creator-supplied asset, used with permission for this project. Third-party marks remain with their owners.",
+      "provenance": "Studio catalog 2512748d0136b22b3afc; Originally kit-level praise24Oct21:13; latest GOOD 2026-10-25T21:44:41+01:00; all original audio removed",
+      "tags": [
+        "photo booth",
+        "proof",
+        "frame"
+      ],
+      "sha256": "c744c00fa0528941bd625960b6abea594fc6c8eed21f059a05a4d5098e4a9f38",
+      "redistributable": true,
+      "duration": 8.0,
+      "muted": true,
+      "thumbnail": "photo-booth.jpg"
+    },
+    {
+      "id": "warm",
+      "type": "lut",
+      "title": "Natural skin",
+      "file": "warm.cube",
+      "source_path": "creator-library:skin-natural-40.cube",
+      "licence": "Creator-supplied asset, used with permission for this project. Third-party marks remain with their owners.",
+      "provenance": "Existing episode LUT, copied by explicit creator instruction, 2 Nov",
+      "tags": [
+        "warm",
+        "warmer",
+        "skin"
+      ],
+      "sha256": "6deef3313b236ac6d7cda3af78c9db19d6d68c2967afbcfc576a086da22f232f",
+      "redistributable": true,
+      "thumbnail": "warm.jpg"
+    },
+    {
+      "id": "cinematic",
+      "type": "lut",
+      "title": "Teal and orange",
+      "file": "cinematic.cube",
+      "source_path": "creator-library:TEALORANGE1-50.cube",
+      "licence": "Creator-supplied asset, used with permission for this project. Third-party marks remain with their owners.",
+      "provenance": "Existing episode LUT, copied by explicit creator instruction, 2 Nov",
+      "tags": [
+        "cinematic",
+        "teal",
+        "orange"
+      ],
+      "sha256": "48cdaab07337f31ef3453050b33ed7821516ffd1375a934d603cadb462dd3492",
+      "redistributable": true,
+      "thumbnail": "cinematic.jpg"
+    },
+    {
+      "id": "cool",
+      "type": "lut",
+      "title": "Cool blue",
+      "file": "cool.cube",
+      "source_path": "creator-library:PARIS-BLUE-v1.cube",
+      "licence": "Creator-supplied asset, used with permission for this project. Third-party marks remain with their owners.",
+      "provenance": "Existing episode LUT, copied by explicit creator instruction, 2 Nov",
+      "tags": [
+        "cool",
+        "blue"
+      ],
+      "sha256": "65796be2f4b98cac733479434d43d5bf424a5b5a31f87f36af3854a2076b0a52",
+      "redistributable": true,
+      "thumbnail": "cool.jpg"
+    },
+    {
+      "id": "folders",
+      "type": "clip",
+      "title": "Folder choreography",
+      "file": "folders.mp4",
+      "source_path": "creator-library:H0596-a-wide-A-B-C.mp4",
+      "licence": "Creator-supplied asset, used with permission for this project. Third-party marks remain with their owners.",
+      "provenance": "Studio catalog d7b66e33597070ff0f94; Mac family approved 19 Oct20:17; pilot b look locked23Oct10:56. Corner alternatives are not three independent approvals.; middle variant crop, not three separate approvals",
+      "tags": [
+        "folders",
+        "folder",
+        "files"
+      ],
+      "sha256": "022a2f72f3883a5e7cdde39d06e49df0a7d24712bd68813cf033f16b939d7fc7",
+      "redistributable": true,
+      "duration": 8.0,
+      "muted": true,
+      "thumbnail": "folders.jpg"
+    },
+    {
+      "id": "sky-card",
+      "type": "clip",
+      "title": "Drawn sky card",
+      "file": "sky-card.mp4",
+      "source_path": "creator-library:H0595-c-wide-A-B-C.mp4",
+      "licence": "Creator-supplied asset, used with permission for this project. Third-party marks remain with their owners.",
+      "provenance": "Studio catalog 373c5ec5671b3a688dfa; Mac family approved 19 Oct20:17; pilot b look locked23Oct10:56. Corner alternatives are not three independent approvals.; middle variant crop, not three separate approvals",
+      "tags": [
+        "sky",
+        "sky card",
+        "card"
+      ],
+      "sha256": "662132a7deaf5c577e5f698f573f4b5000ffb8f02ddca84695584275f4c6bab1",
+      "redistributable": true,
+      "duration": 8.0,
+      "muted": true,
+      "thumbnail": "sky-card.jpg"
+    },
+    {
+      "id": "aurora-border",
+      "type": "border",
+      "title": "Aurora frame",
+      "file": "aurora-border.png",
+      "source_path": "project-generated:aurora-border.png",
+      "licence": "Original project graphic.",
+      "provenance": "Created in this clean build thread; no external image source.",
+      "tags": [
+        "border",
+        "frame"
+      ],
+      "sha256": "8920d2a6f8378771f2cd09685af895b240c86df5631e2dc9f746835203d4e8fa",
+      "redistributable": true,
+      "thumbnail": "aurora-border.png"
+    },
+    {
+      "id": "lower-third",
+      "type": "overlay",
+      "title": "Clean lower third",
+      "file": "lower-third.png",
+      "source_path": "project-generated:lower-third.png",
+      "licence": "Original project graphic.",
+      "provenance": "Created in this clean build thread; no external image source.",
+      "tags": [
+        "lower third",
+        "title"
+      ],
+      "sha256": "5d6afb654d3ca878f3c2b388f83571e5f31b58d0cc2c04fa16f60b9ff6dbaeae",
+      "redistributable": true,
+      "thumbnail": "lower-third.png"
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+# Only required for --obs; the account-free rehearsal uses Python's standard library.
+websocket-client==1.9.0
+Pillow==12.2.0
